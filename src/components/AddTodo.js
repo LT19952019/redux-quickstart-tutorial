@@ -1,6 +1,6 @@
 import React from "react";
 
-const AddTodo = ({ onSubmit }) => {
+const AddTodo = ({ addTodo }) => {
   let input;
 
   return (
@@ -11,7 +11,7 @@ const AddTodo = ({ onSubmit }) => {
           if (!input.value.trim()) {
             return;
           }
-          onSubmit(input.value);
+          addTodo(input.value);
           input.value = "";
         }}
       >
